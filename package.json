@@ -1,7 +1,8 @@
 {
   "name": "@utx/result",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "description": "A typescript implementation of Rust's Result and Option objects.",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/fromgmworks/typescript-result"
