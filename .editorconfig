@@ -7,5 +7,5 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 indent_style = space
 
-[{tsconfig.json,package.json}]
+[{tsconfig.json,package.json, *.md}]
 indent_size = 2

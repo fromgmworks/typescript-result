@@ -1,3 +1,19 @@
+# 3.4.0
+Package migrated from `ts-results` to `@utx/result` for continued development.
+
+- Added `Result.match` method. Usage:
+  ```typescript
+  function sayHello(result: Result<string, Error>) {
+    const phrase = result.match({
+      Ok: (name) => `Hello ${name}!`,
+      Err: (err) => `Would say hello but an error occurred`,
+    })
+    return phrase;
+  }
+  ```
+- Support Native Node ESM with MJS files
+- (Internal) Switch to using Rollup to build CJS and ESM bundles
+
 # 3.3.0
 Big thank you to [@petehunt](https://github.com/petehunt) for all his work adding stack traces to `Err`.
 
@@ -23,7 +39,7 @@ Big thank you to [@petehunt](https://github.com/petehunt) for all his work addin
     -   You should feel at home if you're used to working with Rust:
 
         ```typescript
-        import { Option, Some, None } from 'ts-results';
+        import { Option, Some, None } from '@utx/result';
 
         const optionalNum: Option<number> = Some(3).map((num) => num * 2);
 
