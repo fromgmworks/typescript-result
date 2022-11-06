@@ -1,12 +1,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./dist/",
-    "sourceMap": true,
+    "outDir": "./dist",
+    "sourceMap": false,
     "declaration": true,
-    "declarationMap": true,
-    "moduleResolution": "node",
-    "module": "umd",
+    "declarationMap": false,
+    "moduleResolution": "Node",
+    "module": "ESNext",
+    // Rollup will emit bundle
+    "noEmit": true,
     "noEmitHelpers": false,
     "skipLibCheck": true,
     "lib": ["es2015"],
