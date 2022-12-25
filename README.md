@@ -40,12 +40,12 @@ Brings compile-time error checking and optional values to typescript.
 
 NPM
 ```bash
-npm install @utx/results
+npm install @utx/result
 ```
 
 Yarn
 ```bash
-yarn add @utx/results
+yarn add @utx/result
 ```
 
 ## Example
